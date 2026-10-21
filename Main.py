@@ -8,8 +8,13 @@
 #   - Ties
 #   - Goals For
 #   - Goals Against
-
+print("Welcome to the intramural score tracker")
 # You will ask how many teams are playing.
+print("How many teams are playing?")
+numTeams = int(input())
+while (numTeams < 2):
+    print("You need 2 teams at least, try again")
+
 # Loop that many times, create a team and set all scores to 0, then append it to your list of teams
 # Start an infinite loop for main menu
 #   1) Add score
