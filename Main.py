@@ -16,9 +16,16 @@ while (numTeams < 2):
     print("You need 2 teams at least, try again")
     numTeams = int(input())
 
-print("Got it", {numTeams}, "teams, lets set those up now!")
-
+print("Got it", numTeams , "teams, lets set those up now!")
 # Loop that many times, create a team and set all scores to 0, then append it to your list of teams
+teams=[]
+for i in range(numTeams):
+    team=[]
+    print(f"What is the name of the team #{i+1}?")
+    team.append(input())
+    team.extend(0 for i in range (6))
+    print(team)
+    team.append(input())
 # Start an infinite loop for main menu
 #   1) Add score
 #   2) See Team stats
